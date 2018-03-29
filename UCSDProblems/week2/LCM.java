@@ -6,6 +6,7 @@ So calculate GCD using the Euclid's algorithm.
 import java.util.*;
 
 public class LCM {
+    //This lcm_fast method should be avoided as we are calculating GCD and then LCM directly
     private static long lcm_fast(int a, int b) {
         int big;
         if( a == 1 ) {
