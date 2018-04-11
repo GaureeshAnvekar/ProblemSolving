@@ -18,8 +18,8 @@ Important techniques: </br>
                          arguments to Max or Min.
                          Always prove the optimal substructure property using contradiction or induction.
                          Also for problems that do not have this property, just one example will suffice to prove that dynamic
-                         programming can't be applied.
-1.)  Greedy algorithms: As the name suggests, these algorithms are greedy at each step and try to get the best at each step.
+                         programming can't be applied.</br>
+2.)  Greedy algorithms: As the name suggests, these algorithms are greedy at each step and try to get the best at each step.
                         So they always make locally optimal decision. This may not always lead to the correct solution.
                         Eg: Largest number formed from '3', '7', '8', '5'  => will be 8753.  With greedy technique, at each 
                         stage it finds the largest i.e. 8, then 7, then 5, then 3.
@@ -27,4 +27,7 @@ Important techniques: </br>
                         solution. So the first greedy choice that we make should be safe. This can be done by comparing with an 
                         already existing optimal solution and see if that solution also has the first choice same as our greedy
                         choice. Then we get subproblems and we continue with our greedy choice.
-                        "All safe moves are greedy, but not all greedy moves are safe".
+                        "All safe moves are greedy, but not all greedy moves are safe".</br>
+                        During the DP approach, we go through all the possible solutions to get the most optimal one. But if a                        
+                        problem has a greed property, we can avoid going through all possible solutions. First we have to prove
+                        that a problem has greedy property.
