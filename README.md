@@ -4,7 +4,8 @@ The assignments from "Data structures and algorithms" specialization course from
 the UCSC folder. Make sure of understanding assignments and then implementing it with your own code. Cheers!
 
 Important techniques: </br>
-1.) Dynamic Programming: For problems that have overlapping subproblems, eg: the fibonacci(n) using naive recursion has time
+1.) Dynamic Programming: For optimization problems, problems that have multiple solutions only best one should be selected.
+                         These can be broken down into subproblems, eg: the fibonacci(n) using naive recursion has time
                          complexity of O(2^n). We can either use an iterative approach to bring down complexity or use dynamic 
                          programming. The main gist is to save the solutions of overlapping problems in a data structure and avoid 
                          redundant work.
@@ -15,11 +16,12 @@ Important techniques: </br>
                          to get the optimal one. In case of fibonacci, though it has the property of optimal substructure, but at 
                          each recursive call, there is only one solution that comes out. 
                          But there can be problems with optimal substructure property but many solutions possible. For this we pass  
-                         arguments to Max or Min.
-                         Always prove the optimal substructure property using contradiction or induction.
+                         arguments to Max or Min or some function.
+                         Always prove the optimal substructure property using contradiction or induction. Problems that have this
+                         property have subproblems that are completely independent.
                          Also for problems that do not have this property, just one example will suffice to prove that dynamic
-                         programming can't be applied.
-1.)  Greedy algorithms: As the name suggests, these algorithms are greedy at each step and try to get the best at each step.
+                         programming can't be applied.</br>
+2.)  Greedy algorithms: As the name suggests, these algorithms are greedy at each step and try to get the best at each step.
                         So they always make locally optimal decision. This may not always lead to the correct solution.
                         Eg: Largest number formed from '3', '7', '8', '5'  => will be 8753.  With greedy technique, at each 
                         stage it finds the largest i.e. 8, then 7, then 5, then 3.
@@ -27,4 +29,7 @@ Important techniques: </br>
                         solution. So the first greedy choice that we make should be safe. This can be done by comparing with an 
                         already existing optimal solution and see if that solution also has the first choice same as our greedy
                         choice. Then we get subproblems and we continue with our greedy choice.
-                        "All safe moves are greedy, but not all greedy moves are safe".
+                        "All safe moves are greedy, but not all greedy moves are safe".</br>
+                        During the DP approach, we go through all the possible solutions to get the most optimal one. But if a                        
+                        problem has a greed property, we can avoid going through all possible solutions. First we have to prove
+                        that a problem has greedy property.
